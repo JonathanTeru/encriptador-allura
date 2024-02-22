@@ -1,0 +1,241 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ajusta esto según tus necesidades */
+    width: 100vw; /* Ajusta esto según tus necesidades */
+    background-color: #F3F5FC;
+}
+
+header {
+    width: 100%;
+    height: 40px; /* Ajusta esto según tus necesidades */
+}
+
+#Logo {
+    position: absolute;
+    top: 5px; 
+    left: 20px; 
+}
+
+.caja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    height: calc(100% - 40px); /* Ajusta esto según tus necesidades */
+}
+
+.contenedor1 {
+    width: 70%;
+    height: 100%;
+ 
+
+}
+
+.input-placeholder {
+    position: relative;
+    height: 100%;
+}
+
+::placeholder {
+    position: absolute;
+    color: #0A3871;
+    pointer-events: none;
+    font-size: 40px; /* Ajusta esto según tus necesidades */
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+}
+
+#input-container {
+    height: 70%;
+    
+}
+
+.cajita-text{
+    width: 60%;
+    height: 85%;
+    border: none;
+    background-color: #f4f4fc;
+    cursor: pointer;
+    color: #0A3871;
+    border-color: #0A3871;
+    font-size: 24px; /* Ajusta esto según tus necesidades */
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    margin-left: 180px; /* Ajusta esto según tus necesidades */
+    margin-top: 40px; /* Ajusta esto según tus necesidades */
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+/* Estilo para la div que contiene el mensaje y los botones */
+.aviso-botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px; 
+    width:100%;
+    height: 15%;
+   
+}
+/* Estilo para el mensaje */
+.aviso {
+    margin-top: 30px;
+    display: flex; /* Usamos flexbox para alinear los elementos */
+   margin-right: 20%; /* Los elementos se centran verticalmente */
+    color: #495057; /* Le damos un color al texto */
+}
+
+/* Estilo para los botones */
+.botones {
+    display: flex; /* Usamos flexbox para alinear los elementos */
+    width: 80%;
+    margin-top: 30px;
+}
+
+/* Estilo para el botón de encriptar */
+#encrypt {
+    width: 30%; /* Le damos un ancho al botón */
+    height: 50px; /* Le damos un alto al botón */
+    border-radius: 18px; /* Le damos un borde redondeado al botón */
+    background-color: #0A3871; /* Le damos un color de fondo al botón */
+    color: white; /* Le damos un color al texto del botón */
+    font-size: 12px; /* Le damos un tamaño al texto del botón */
+    font-weight: 400; /* Le damos un grosor al texto del botón */
+    font-family: 'Inter', sans-serif; /* Le damos una fuente al texto del botón */
+    border: none; /* Le quitamos el borde al botón */
+    cursor: pointer; /* Le cambiamos el cursor al botón */
+   margin-right: 2.5%;
+margin-left: 15%;
+}
+
+/* Estilo para el botón de desencriptar */
+#decrypt {
+    width: 30%; /* Le damos un ancho al botón */
+    height: 50px; /* Le damos un alto al botón */
+    border-radius: 18px; /* Le damos un borde redondeado al botón */
+    background-color: #D8DFE8; /* Le damos un color de fondo al botón */
+    color: #0A3871; /* Le damos un color al texto del botón */
+    font-size: 12px; /* Le damos un tamaño al texto del botón */
+    font-weight: 400; /* Le damos un grosor al texto del botón */
+    font-family: 'Inter', sans-serif; /* Le damos una fuente al texto del botón */
+    border: 1px solid #0A3871; /* Le damos un borde al botón */
+    cursor: pointer; /* Le cambiamos el cursor al botón */
+
+}
+
+.contenedor2{
+    width: 30%;
+    display: block;
+    position: relative; /* Esto es importante para que el botón se posicione en relación a este contenedor */
+    height: 600px; /* Ajusta esto según tus necesidades */
+    right: 90px; /* Ajusta esto según tus necesidades */
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border-radius: 24px; /* Ajusta esto según tus necesidades */
+    box-shadow: 0px 18px 24px -6px rgba(0, 0, 0, 0.50);
+    resize: none;
+}
+
+#entradadetexto{
+    resize: none;
+}
+
+.areaderespuesta {
+   
+    display: flex;
+    flex-direction: column;
+   margin-top: 20%; /* Esto alinea los elementos al inicio del eje principal */
+    align-items: center;
+    height: 100%;
+}
+
+#personita2{
+    display: none;
+}
+
+#titulo1 {
+    text-align: center;
+    font-weight: bold; 
+    font-size: 20px; /* Ajusta esto según tus necesidades */
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    top: 70%; /* Ajusta esto según tus necesidades */
+}
+
+#txt2 {
+    text-align: center;
+    font-weight: bold; 
+    font-size: 12px; /* Ajusta esto según tus necesidades */
+    color: #495057;
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    top: 75%;/* Ajusta esto según tus necesidades */
+   
+}
+
+#resultado {
+    text-align: justify;
+    font-weight: bold; 
+    font-size: 20px; /* Ajusta esto según tus necesidades */
+    color: #495057;
+    font-family: 'Inter', sans-serif;
+    margin-top: 20px; /* Ajusta esto según tus necesidades */
+}
+#Copiar{
+    display: none;
+    width: 246px; /* Ajusta esto según tus necesidades */
+    height: 50px; /* Ajusta esto según tus necesidades */
+    border-radius: 18px; /* Ajusta esto según tus necesidades */
+    background-color:white;
+    color: #0A3871;
+    border-color: #0A3871;
+    font-size: 12px; /* Ajusta esto según tus necesidades */
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    border: 2px solid; /* Aquí le damos un ancho de 2px y un estilo sólido al borde */
+    cursor: pointer;
+    position: absolute; /* Esto hace que el botón se posicione en relación al contenedor 2 */
+    bottom: 20px; /* Esto hace que el botón se sitúe a 20px del borde inferior del contenedor */
+}
+
+/* Seleccionamos el botón Copiar cuando se hace clic */
+#Copiar:active {
+    /* Escalamos el botón a un 90% de su tamaño original */
+    transform: scale(0.9);
+    /* Rotamos el botón 10 grados en sentido horario */
+    transform: rotate(10deg);
+    /* Establecemos una transición de 0.3 segundos para la animación */
+    transition: 0.3s;
+  }
+  @media only screen and (max-width: 480px) {
+    /* Aquí van los estilos para pantallas pequeñas */
+    body {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; /* Esto hace que los contenedores se ajusten al espacio disponible */
+    }
+    main {
+        display: flex;
+        width: 100%;
+        height: calc(100% - 40px); /* Ajusta esto según tus necesidades */
+    }
+    .contenedor1 {
+      width: 100%; /* El contenedor 1 ocupa todo el ancho de la pantalla */
+      height: 60%; /* El contenedor 1 ocupa el 60% de la altura de la pantalla */
+    }
+  
+    .contenedor2{ 
+      width: 100%; /* El contenedor del área de respuesta ocupa todo el ancho de la pantalla */
+      height: 20%; /* El contenedor del área de respuesta ocupa el 20% de la altura de la pantalla */
+    }
+  }
+  

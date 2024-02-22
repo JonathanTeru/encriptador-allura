@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="icon" href="Imagenes/Logo.png" type="image/x-icon">
+    <title>code_enigma</title>
+</head>
+
+<body>
+    <header>
+        <div class="caja">
+        <h1 id="Logo"><img src="Imagenes/Logo.png"></h1>
+        </div>
+    </header>
+    
+    <main>
+        <section class="contenedor1">
+            <div id="input-container">
+                <div class="input-placeholder">
+                  <textarea type="text" id="entradadetexto" class="cajita-text" required placeholder="Ingrese su texto aquí"></textarea>
+                </div>
+              </div>
+            
+        <div class="aviso-botones">
+            <div class="aviso">
+                <p class="informacion"><img src="Imagenes/bi_exclamation-circle-fill.png" alt="" class="logo2">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="botones">
+           <button id="encrypt">Encriptar</button>
+           <button id="decrypt">Desencriptar</button>
+            </div>
+        </div>
+        </section>
+        
+        <section class="contenedor2">
+            
+            <div class="areaderespuesta">
+                <p id="personita"><img id="imagen-personita" src="Imagenes/Muñeco.png"></p>
+                <p id="personita2"><img id="imagen-personita2" src="Imagenes/Muñeco2.png"></p>
+                <p id="titulo1">Ningún mensaje fue encontrado.</p>
+                <p id="txt2">Ingresa el texto que deseas encriptar.</p>
+        
+                <p id="resultado"></p> <!-- Nuevo elemento para mostrar el resultado -->
+                <button id="Copiar">Copiar</button> <!-- Nuevo elemento para copiar el resultado -->
+            </div>
+            
+        </section>
+        
+    </main>
+    
+
+    <footer>
+        <a href="https://github.com/JonathanTeru">Hecho por Riddler</a>
+    </footer>
+
+    <script src="enigma.js"></script>
+</body>
+</html>
