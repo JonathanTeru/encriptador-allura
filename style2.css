@@ -218,7 +218,7 @@ margin-left: 15%;
   }
   
   
-  @media only screen and (max-width: 480px) {
+ @media only screen and (max-width: 480px) {
     body {
         display: flex;
         flex-direction: column; 
@@ -296,14 +296,15 @@ margin-left: 15%;
 
 
     .contenedor2 {
-        width: 85%; /* El contenedor 2 ocupa el 85% del ancho de la pantalla */
+        width: 90%; /* El contenedor 2 ocupa el 85% del ancho de la pantalla */
         height: calc(30% - 40px - 60px);  /* El contenedor 2 ocupa el 30% de la altura de la pantalla */
         order: 2; /* El contenedor 2 se muestra después del contenedor 1 */
-        margin-left: 28%; /* Centra el contenedor 2 horizontalmente */
+        margin-left: 33%; /* Centra el contenedor 2 horizontalmente */
         margin-right: auto; /* Centra el contenedor 2 horizontalmente */
         padding: 0; /* Reset del padding */
         border: none; /* Reset del border */
         overflow: auto;
+      
         
     }
     .areaderespuesta {
@@ -333,14 +334,14 @@ margin-left: 15%;
     #txt2 {
         position: absolute; 
         font-size: 15px;
-        top: 80px
+        top: 85px
     }
 
     #resultado {
         font-size: 16px;
-       
-            position: absolute; /* Posiciona el párrafo en relación al contenedor */
-            word-wrap: break-word;
+        overflow: auto;
+       position: absolute; /* Posiciona el párrafo en relación al contenedor */
+     word-wrap: break-word;
           
          top: 0; /* Alinea el párrafo con la parte superior del contenedor */
         }
@@ -350,6 +351,8 @@ margin-left: 15%;
         width: 80%;
         height: 50px;
         font-size: 10px;
+        position: fixed;
+        bottom: 14%;
     }
 }
 
