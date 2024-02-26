@@ -59,7 +59,7 @@ main {
 }
 
 .cajita-text{
-    width: 60%;
+    width: 65%;
     height: 85%;
     border: none;
     background-color: #f4f4fc;
@@ -183,7 +183,7 @@ margin-left: 15%;
 }
 
 #resultado {
-    text-align: justify;
+    text-align: left;
     font-weight: bold; 
     font-size: 20px; /* Ajusta esto según tus necesidades */
     color: #495057;
@@ -216,26 +216,141 @@ margin-left: 15%;
     /* Establecemos una transición de 0.3 segundos para la animación */
     transition: 0.3s;
   }
-  @media only screen and (max-width: 480px) {
-    /* Aquí van los estilos para pantallas pequeñas */
-    body {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap; /* Esto hace que los contenedores se ajusten al espacio disponible */
-    }
-    main {
-        display: flex;
-        width: 100%;
-        height: calc(100% - 40px); /* Ajusta esto según tus necesidades */
-    }
-    .contenedor1 {
-      width: 100%; /* El contenedor 1 ocupa todo el ancho de la pantalla */
-      height: 60%; /* El contenedor 1 ocupa el 60% de la altura de la pantalla */
-    }
   
-    .contenedor2{ 
-      width: 100%; /* El contenedor del área de respuesta ocupa todo el ancho de la pantalla */
-      height: 20%; /* El contenedor del área de respuesta ocupa el 20% de la altura de la pantalla */
+  
+  @media only screen and (max-width: 480px) {
+    body {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
     }
-  }
+    
+    main {
+        height: 100%; 
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Logo {
+        top: 10px;
+        left: 0;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .contenedor1 {
+        margin-top: 20px;
+        height: 70%;
+        order: 1;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #input-container {
+        height: 70%;
+        width: 85%;
+    }
+
+    .cajita-text {
+        margin: 0;
+        width: 100%;
+        
+    }
+    /* Estilo para la div que contiene el mensaje y los botones */
+    .aviso-botones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px; 
+        width:100%;
+        height: auto; /* Cambia la altura del contenedor .aviso-botones a auto */
+    }
+
+    .aviso {
+        width: 100%;
+        height: auto; /* Cambia la altura del contenedor .aviso a auto */
+        margin-left: 35%;
+        flex-direction: column;
+        margin-top: 0%;
+    }
+    .botones {
+        width: 100%;
+        height: auto; /* Cambia la altura del contenedor .botones a auto */
+        margin-left: 20%;
+        flex-direction: column;
+        margin-top: 0%;
+    }
+
+    #encrypt, #decrypt {
+        height: 60px; /* Aumenta la altura de los botones a 60px */
+        width: 80%;
+        margin-bottom: 10px;
+        font-size: 15px;
+        margin-left: 0%;
+    }
+
+
+    .contenedor2 {
+        width: 85%; /* El contenedor 2 ocupa el 85% del ancho de la pantalla */
+        height: calc(30% - 40px - 60px);  /* El contenedor 2 ocupa el 30% de la altura de la pantalla */
+        order: 2; /* El contenedor 2 se muestra después del contenedor 1 */
+        margin-left: 28%; /* Centra el contenedor 2 horizontalmente */
+        margin-right: auto; /* Centra el contenedor 2 horizontalmente */
+        padding: 0; /* Reset del padding */
+        border: none; /* Reset del border */
+        overflow: auto;
+        
+    }
+    .areaderespuesta {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centra los elementos a lo largo del eje principal */
+        align-items: center;
+        height: 100%;
+    }
+
+    #personita, #personita2 {
+        display: none;
+    }
+
+    #personita2 img {
+        width: 1px;
+        height: 1px;
+    }
+
+    #titulo1 {
+        font-size: 20px;
+        position: absolute;
+        top: 50px
+    }
+
+    #txt2 {
+        position: absolute; 
+        font-size: 15px;
+        top: 80px
+    }
+
+    #resultado {
+        font-size: 16px;
+       
+            position: absolute; /* Posiciona el párrafo en relación al contenedor */
+            word-wrap: break-word;
+          
+         top: 0; /* Alinea el párrafo con la parte superior del contenedor */
+        }
+    
+
+    #Copiar {
+        width: 80%;
+        height: 50px;
+        font-size: 10px;
+    }
+}
+
   
