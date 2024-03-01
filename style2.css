@@ -218,7 +218,7 @@ margin-left: 15%;
   }
   
   
- @media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     body {
         display: flex;
         flex-direction: column; 
@@ -290,16 +290,16 @@ margin-left: 15%;
         height: 60px; /* Aumenta la altura de los botones a 60px */
         width: 80%;
         margin-bottom: 10px;
-        font-size: 15px;
+        font-size: 20px;
         margin-left: 0%;
     }
 
 
     .contenedor2 {
-        width: 90%; /* El contenedor 2 ocupa el 85% del ancho de la pantalla */
+        width: 95%; /* El contenedor 2 ocupa el 85% del ancho de la pantalla */
         height: calc(30% - 40px - 60px);  /* El contenedor 2 ocupa el 30% de la altura de la pantalla */
         order: 2; /* El contenedor 2 se muestra después del contenedor 1 */
-        margin-left: 33%; /* Centra el contenedor 2 horizontalmente */
+        margin-left: 27%; /* Centra el contenedor 2 horizontalmente */
         margin-right: auto; /* Centra el contenedor 2 horizontalmente */
         padding: 0; /* Reset del padding */
         border: none; /* Reset del border */
@@ -328,13 +328,13 @@ margin-left: 15%;
     #titulo1 {
         font-size: 20px;
         position: absolute;
-        top: 50px
+        top: 25px
     }
 
     #txt2 {
         position: absolute; 
         font-size: 15px;
-        top: 85px
+        top: 45px
     }
 
     #resultado {
@@ -350,10 +350,158 @@ margin-left: 15%;
     #Copiar {
         width: 80%;
         height: 50px;
-        font-size: 10px;
+        font-size: 20px;
         position: fixed;
-        bottom: 14%;
+        bottom: 13%;
     }
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+     
+    body {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+    
+    main {
+        height: 100%; 
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Logo {
+        top: 10px;
+        left: 0;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .contenedor1 {
+        margin-top: 20px;
+        height: 70%;
+        order: 1;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #input-container {
+        height: 70%;
+        width: 85%;
+    }
+
+    .cajita-text {
+        margin: 0;
+        width: 100%;
+        
+    }
+   
+    .aviso-botones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px; 
+        width:100%;
+        height: auto; 
+    }
+
+    .aviso {
+        font-size: 30px;
+        width: 100%;
+        height: auto; 
+        margin-left: 35%;
+        flex-direction: column;
+        margin-top: 0%;
+    }
+    .botones {
+        width: 100%;
+        height: auto; 
+        margin-left: 20%;
+        flex-direction: column;
+        margin-top: 0%;
+    }
+
+    #encrypt, #decrypt {
+        height: 60px; 
+        width: 80%;
+        margin-bottom: 10px;
+        font-size: 40px;
+        margin-left: 0%;
+    }
+
+
+    .contenedor2 {
+        width: 95%; 
+        height: calc(30% - 40px );  
+        order: 2; 
+        margin-left: 15%; 
+        margin-right: auto; 
+        padding: 0; 
+        border: none; 
+        overflow: auto;
+      
+        
+    }
+    .areaderespuesta {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        height: 100%;
+    }
+
+    #personita, #personita2 {
+        display: none;
+    }
+
+    #personita2 img {
+        width: 1px;
+        height: 1px;
+    }
+
+    #titulo1 {
+        font-size: 40px;
+        position: absolute;
+        top: 25px
+    }
+
+    #txt2 {
+        position: absolute; 
+        font-size: 20px;
+        top: 70px
+    }
+
+    #resultado {
+        font-size: 25px;
+        overflow: auto;
+       position: absolute; 
+     word-wrap: break-word;
+          
+         top: 0; 
+        }
+    
+
+    #Copiar {
+        width: 80%;
+        height: 50px;
+        font-size: 40px;
+        position: fixed;
+        bottom: 13%;
+    }
+
+    #git {
+
+      font-size: 40px;  
+
+    }
+  
 }
 
   
